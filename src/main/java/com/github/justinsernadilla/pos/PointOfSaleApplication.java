@@ -1,13 +1,13 @@
-package com.github.justinsernadilla.pos_system;
+package com.github.justinsernadilla.pos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PosSystemApplication {
+public class PointOfSaleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PosSystemApplication.class, args);
+		SpringApplication.run(PointOfSaleApplication.class, args);
 	}
 
 }
