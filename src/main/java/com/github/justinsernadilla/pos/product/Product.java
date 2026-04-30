@@ -35,14 +35,14 @@ public class Product {
 
     @Column(name = "stock_quantity",
             nullable = false)
-    private Integer stockQuantity;
+    private Integer stockQuantity = 0;
 
     @Column(name = "low_quantity_threshold")
     private Integer lowQuantityThreshold;
 
     @Column(name = "track_inventory",
             nullable = false)
-    private Boolean trackInventory;
+    private Boolean trackInventory = false;
 
     protected Product() {}
 
