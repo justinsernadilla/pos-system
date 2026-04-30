@@ -22,12 +22,12 @@ public class Transaction {
     @Column(name = "tax_amount",
             nullable = false,
             scale = 2)
-    private BigDecimal taxAmount;
+    private BigDecimal taxAmount = BigDecimal.ZERO;
 
     @Column(name = "discount_amount",
             nullable = false,
             scale = 2)
-    private BigDecimal discountAmount;
+    private BigDecimal discountAmount = BigDecimal.ZERO;
 
     @Column(name = "total_amount",
             nullable = false,
@@ -49,7 +49,7 @@ public class Transaction {
 
     @Column(name = "transaction_status",
             nullable = false)
-    private TransactionStatus transactionStatus;
+    private TransactionStatus transactionStatus = TransactionStatus.PENDING;
 
     protected Transaction() {}
 
